@@ -1,0 +1,174 @@
+:root{
+    /*COLORES*/
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+main .card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 60px 10px 60px 10px;
+}
+
+/*MAIN ARTICLE*/
+main .card-container article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 280px;
+    height: 450px;
+    padding: 40px 30px 40px 30px;
+}
+main .card-container img{
+    width: 65px;
+}
+main .card-container article h3{
+    margin: 0px 0 25px 0;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: var(--very-light-gray);
+}
+main .card-container article p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--transparent-white);
+}
+
+main .card-container__sedans{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+main .card-container__suvs{
+    background-color: var(--dark-cyan);
+}
+main .card-container__luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius:  0 0 10px 10px;
+}
+
+
+/**/
+main .card-container article button{
+    width: 120px;
+    height: 50px;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 25px;
+    background-color: var(--very-light-gray);
+}
+main .card-container__sedans button{
+    color: var(--bright-orange);
+}
+main .card-container__suvs button{
+    color: var(--dark-cyan);
+}
+main .card-container__luxury button{
+    color: var(--very-dark-cyan);
+}
+
+main .card-container__sedans button:hover{
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+main .card-container__suvs button:hover{
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+main .card-container__luxury button:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+    border: 2px solid var(--very-light-gray);
+}
+
+
+/*FOOTER ATTRIBUTION*/
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: var(--main-background);
+}
+footer .attribution p{
+
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--bright-orange);
+}
+footer .attribution a{
+    text-decoration: none;
+    color: var(--main-violet);
+    color: var(--dark-cyan);
+}
+
+
+
+
+
+@media(min-width: 859px){
+    main{
+
+        height: 92vh;
+    }
+    
+    /*CHANGE BORDER*/
+    main .card-container__sedans{
+        border-radius: 10px 0 0 10px;
+    }
+    main .card-container__luxury{
+        border-radius:  0 10px 10px 0px;
+    }
+}
+
+
+/*
+1. Positioning.
+2. Model Box.
+3. Typography.
+4. Visual.
+5. Others.
+*/
