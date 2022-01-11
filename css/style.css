@@ -18,6 +18,12 @@ html{
     background-color: var(--very-light-gray);
 }
 
+/*HEADER*/
+header h1{
+    display: none;
+}
+
+
 
 /*MAIN*/
 main{
