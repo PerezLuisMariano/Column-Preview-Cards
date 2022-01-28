@@ -136,7 +136,7 @@ footer{
     height: 50px;
     background: var(--main-background);
 }
-footer .attribution h2{
+footer .attribution h1{
 
     font-family: 'Bebas Neue';
     font-size: 1.5rem;
