@@ -20,7 +20,11 @@ html{
 
 /*HEADER*/
 header h1{
-    display: none;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    display: absolute;
+    color: var(--very-light-gray);
 }
 
 
@@ -32,6 +36,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
     height: auto;
 }
 
@@ -138,7 +143,7 @@ footer{
 }
 footer .attribution h2{
 
-    font-family: 'Bebas Neue';
+    font-family: 'Lexend Deca', sans-serif;;
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 1px;
